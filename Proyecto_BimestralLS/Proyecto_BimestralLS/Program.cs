@@ -73,7 +73,7 @@ namespace Proyecto_BimestralLS
                 OP = char.Parse(Console.ReadLine());
                 Console.Clear();
 
-                Console.WriteLine("Lourdes");
+                
             }
         }
     }
