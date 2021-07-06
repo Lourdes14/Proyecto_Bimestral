@@ -72,6 +72,8 @@ namespace Proyecto_BimestralLS
                 Console.WriteLine("Desea Regresar al Menú Principal [s/n]");
                 OP = char.Parse(Console.ReadLine());
                 Console.Clear();
+
+                Console.WriteLine("Lourdes");
             }
         }
     }
