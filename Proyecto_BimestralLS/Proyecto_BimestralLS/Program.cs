@@ -27,9 +27,6 @@ namespace Proyecto_BimestralLS
                 mat[3, 0] = "Estatura";
                 mat[4, 0] = "Masa Corporal";
 
-
-
-
                 Console.Clear();
                 Console.WriteLine("Qué Desea Hacer:\n 1.Ingresar datos \n 2.Resultado de la persona");
                 op = int.Parse(Console.ReadLine());
@@ -58,11 +55,12 @@ namespace Proyecto_BimestralLS
                     for (int f = 1; f < 2; f++)
                     {
 
-                        double altura = double.Parse(mat[2, f]), pes = double.Parse(mat[3, f]);
+                        peso = double.Parse(mat[2, f]);
+                        estatura = double.Parse(mat[3, f]);
                         double alt = 0;
                         alt = Math.Pow(1.75, 2);
-                        Console.WriteLine(" altura " + alt);
-                        IMC = pes / alt;
+                        Console.WriteLine(" altura " + estatura);
+                        IMC = peso / alt;
                         Console.WriteLine(IMC);
                         Console.WriteLine(mat[0, f] + " " + mat[1, f] + " " + mat[2, f] + " " + mat[3, f] + " " + Math.Round(IMC, 2));
 
